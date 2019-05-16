@@ -1,0 +1,298 @@
+@font-face{
+  src:url(fonts/LemonMilk/LemonMilk.otf);
+  font-family: lm;
+}
+@font-face{
+  src:url(fonts/LemonMilk/LemonMilkbold.otf);
+  font-family: lmb;
+}
+@font-face{
+  src:url(fonts/timeless/Timeless-Bold.ttf);
+  font-family: tlss;
+}
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body {
+  background-color: rgb(234, 232, 220);
+  font-family: lm;
+  font-weight: lighter;}
+
+html, body{ 
+  width: 100%; 
+  height: 125%; 
+  padding: 0; 
+  margin: 0px; }
+
+/*navigation bar*/
+.navbar-fixed {
+  top: 0;
+  left:0;
+  z-index: 100;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  margin: 0 0 0 0;
+  padding: 0%;
+  overflow: auto;
+  justify-content: center;
+  border: 3px;
+  border-color: #000;
+  text-align: right;}
+
+.btn {
+  font-family: lm;
+  border: none;
+  background-color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(77, 76, 77);
+  text-decoration: none;
+  border: none;}
+
+.btn a{
+  text-decoration: none;
+  color: rgb(77, 76, 77);}
+.btn:hover {
+  color:rgb(234, 232, 220);}
+
+.logo{
+  position: fixed;
+  float: left;
+  margin: 0px 40px;
+  color: rgb(234,89,75);
+  font-family: lmb;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 2px;
+  padding: 0%;
+  line-height: 60px;
+  text-decoration: none;}
+
+.sign{
+  background-color: rgb(234,89,75);
+  border-radius: 15px;
+  line-height: 40px;
+  padding: 0% 10px;}
+
+/*drop down*/
+.dropdown1 {
+  position: relative;
+  display: inline-block;}
+.dropdown2 {
+  position: relative;
+  display: inline-block;}
+.dropdown3 {
+  position: relative;
+  display: inline-block;}
+
+/* dropbutton1*/
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: rgb(234, 232, 220);
+  min-width: 160px;
+  z-index: 1;}
+.dropdown-content1 a {
+  color: rgb(77, 76, 77);
+  text-align: left;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color: rgb(234,89,75)}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+/* dropbutton2*/
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(234, 232, 220);
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content2 a {
+  color: rgb(77, 76, 77);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 0px 16px;}
+
+.dropdown-content2 a:hover {background-color: rgb(234,89,75)}
+
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+/* dropbutton3*/
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: rgb(234, 232, 220);
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content3 a {
+  color: rgb(77, 76, 77);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 0px 16px;
+}
+
+.dropdown-content3 a:hover {background-color: rgb(234,89,75)}
+
+.dropdown3:hover .dropdown-content3 {display: block;}
+
+
+/*search bar
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}*/
+
+/*slider*/
+
+slider { 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #1f1f1f; 
+  overflow: hidden; 
+  position: absolute;
+  top: 0%; 
+}
+slider > * { 
+  position: absolute; 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  background: #1f1f1f; 
+  animation: slide 28s infinite; 
+  overflow: hidden; 
+  top: 0%
+} 
+slide:nth-child(1){ 
+  left: 0%; 
+  animation-delay: -1s; 
+  background-image: url(photos/ropa.jpg); 
+  background-size: cover; 
+  background-position: center; 
+}
+slide:nth-child(2){ 
+  left: 100%;
+  animation-delay: 6s; 
+  background-image: url(photos/dress.jpg); 
+  background-size: cover; 
+  background-position: center; 
+}
+slide:nth-child(3){ 
+  left: 100%; 
+  animation-delay: 13s; 
+  background-image: url(photos/sunny.jpg); 
+  background-size: cover; 
+  background-position: center; 
+}
+slide:nth-child(4){ 
+  left: 100%; 
+  animation-delay: 20s; 
+  background-image: url(photos/stroll.jpg); 
+  background-size: cover; 
+  background-position: center; 
+}
+slide p { 
+  position: absolute;
+  font-family:lm;
+  font-size: 15;
+  top: 95%;
+  left: 73%;
+  word-break: break-all;
+  color: rgb(77, 76, 77);
+}
+@keyframes slide { 
+  0% {left: 100%; width: 100%; opacity: 1;} 
+  5% {left: 0%;} 
+  25% {left: 0%;} 
+  30% {left: -100%; width: 100%; opacity: 1;} 
+  30.0001% {left: -100%; width: 0%; opacity: 0;} 
+  100% {left: 100%; width: 100%; opacity: 0;} 
+}
+.centered {
+  position: absolute;
+  font-family:lm;
+  color: rgb(77, 76, 77);
+  font-size: 18;
+  margin-left: 40px;
+  top: 8%;
+  left: 0%;
+  word-break: break-all;
+}
+
+/*end*/
+
+.bottom{
+  width: 100%;
+  height: 53.2%;
+  margin: 0%;
+  padding-top: 5%;
+  background-color: rgb(234, 232, 220);
+}
+.bottom1{
+  width: 100%;
+  height: 25%;
+  margin: 0%;
+  padding-top: 5%;
+  background-color: rgb(234, 232, 220);
+}
+.social-media{
+  width: 100%;
+  height: 28%;
+  background-color: rgb(234, 232, 220);
+  text-decoration: none;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(234,89,75);
+}
+.social-media ul li {
+  float: left;
+}
+
+.social-media ul li a {
+  display: block;
+  color: rgb(77, 76, 77);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.final{
+  width: 100%;
+  text-align: center;
+  color: rgb(77, 76, 77);
+  font-size: 60%;
+}
+
+.red-line{
+  background-color: rgb(234,89,75);
+  width: 100%;
+  height: 8%;
+}
+
+.nosotros{
+  color: rgb(77, 76, 77);
+  font-family: tlss;
+  text-align: center;
+}
