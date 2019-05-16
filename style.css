@@ -18,10 +18,36 @@ body {
   font-weight: lighter;}
 
 html, body{ 
-  width: 100%; 
-  height: 125%; 
+  width: 100vw; 
+  height: 200vh;
   padding: 0; 
   margin: 0px; }
+
+.logo{
+  position: fixed;
+  float: left;
+  margin: 2.5vh 3vw;
+  color: rgb(234,89,75);
+  font-family: lmb;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 2px;
+  padding: 0%;
+  line-height: 50px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.centered {
+  position: absolute;
+  font-family:lm;
+  color: rgb(77, 76, 77);
+  font-size: 18;
+  top: 8vh;
+  left: 3vw;
+  word-break: break-all;
+  z-index: 2;
+}
 
 /*navigation bar*/
 .navbar-fixed {
@@ -49,40 +75,14 @@ html, body{
   display: inline-block;
   color: rgb(77, 76, 77);
   text-decoration: none;
-  border: none;}
+  border: none;
+}
 
 .btn a{
   text-decoration: none;
   color: rgb(77, 76, 77);}
 .btn:hover {
   color:rgb(234, 232, 220);}
-
-.logo{
-  position: fixed;
-  float: left;
-  margin: 0px 40px;
-  color: rgb(234,89,75);
-  font-family: lmb;
-  font-weight: bold;
-  font-size: 64px;
-  letter-spacing: 2px;
-  padding: 0%;
-  line-height: 60px;
-  text-decoration: none;
-  z-index: 2;
-}
-
-.centered {
-  position: absolute;
-  font-family:lm;
-  color: rgb(77, 76, 77);
-  font-size: 18;
-  margin-left: 40px;
-  top: 12%;
-  left: 0%;
-  word-break: break-all;
-  z-index: 2;
-}
 
 .sign{
   background-color: rgb(234,89,75);
@@ -94,15 +94,17 @@ html, body{
 
 /*drop down*/
 .dropdown1 {
+  margin: 0;
   position: relative;
   display: inline-block;}
 .dropdown2 {
+  margin: 0;
   position: relative;
   display: inline-block;}
 .dropdown3 {
+  margin: 0;
   position: relative;
   display: inline-block;}
-
 /* dropbutton1*/
 .dropdown-content1 {
   display: none;
@@ -111,22 +113,17 @@ html, body{
   min-width: 160px;
   z-index: 50;
 }
-
 .dropdown-content1 a {
   color: rgb(77, 76, 77);
   text-align: left;
   padding: 0px 16px;
   text-decoration: none;
   display: block;}
-
 /* Change color of dropdown links on hover */
 .dropdown-content1 a:hover {background-color: rgb(234,89,75)}
-
 /* Show the dropdown menu on hover */
 .dropdown1:hover .dropdown-content1 {display: block;}
-
 /* dropbutton2*/
-
 .dropdown-content2 {
   display: none;
   position: absolute;
@@ -141,13 +138,9 @@ html, body{
   display: block;
   text-align: left;
   padding: 0px 16px;}
-
 .dropdown-content2 a:hover {background-color: rgb(234,89,75)}
-
 .dropdown2:hover .dropdown-content2 {display: block;}
-
 /* dropbutton3*/
-
 .dropdown-content3 {
   display: none;
   position: absolute;
@@ -163,18 +156,8 @@ html, body{
   text-align: left;
   padding: 0px 16px;
 }
-
 .dropdown-content3 a:hover {background-color: rgb(234,89,75)}
-
 .dropdown3:hover .dropdown-content3 {display: block;}
-
-
-/*search bar
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}*/
 
 /*slider*/
 
@@ -230,10 +213,11 @@ slide p {
   position: absolute;
   font-family:lm;
   font-size: 15;
-  top: 95%;
-  left: 73%;
+  bottom: 5;
+  right: 5;
   word-break: break-all;
   color: rgb(77, 76, 77);
+  margin: 0%;
 }
 @keyframes slide { 
   0% {left: 100%; width: 100%; opacity: 1;} 
@@ -246,13 +230,14 @@ slide p {
 
 /*end*/
 
-.bottom{
-  width: 100%;
-  height: 53.2%;
+.div100{
+  width: 100vw;
+  height: 100vh;
   margin: 0%;
-  padding-top: 5%;
+  padding: 0;
   background-color: rgb(234, 232, 220);
 }
+
 .bottom1{
   width: 100%;
   height: 25%;
@@ -261,11 +246,14 @@ slide p {
   background-color: rgb(234, 232, 220);
 }
 .social-media{
-  width: 100%;
-  height: 28%;
+  width: 100vw;
   background-color: rgb(234, 232, 220);
   text-decoration: none;
   text-align: center;
+  z-index: 3;
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .social-media ul {
@@ -278,13 +266,13 @@ slide p {
 .social-media ul li {
   float: left;
 }
-
 .social-media ul li a {
   display: block;
   color: rgb(77, 76, 77);
   text-align: center;
-  padding: 16px;
+  padding: 0px 16px;
   text-decoration: none;
+
 }
 
 .final{
@@ -292,16 +280,16 @@ slide p {
   text-align: center;
   color: rgb(77, 76, 77);
   font-size: 60%;
-}
-
-.red-line{
-  background-color: rgb(234,89,75);
-  width: 100%;
-  height: 8%;
+  position: relative;
+  top: 55vh;
 }
 
 .nosotros{
   color: rgb(77, 76, 77);
   font-family: tlss;
   text-align: center;
+  width: 100vw;
+  position: relative;
+  top: 50vh;
+  left: 0vw;
 }
