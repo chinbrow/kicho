@@ -68,13 +68,29 @@ html, body{
   letter-spacing: 2px;
   padding: 0%;
   line-height: 60px;
-  text-decoration: none;}
+  text-decoration: none;
+  z-index: 2;
+}
+
+.centered {
+  position: absolute;
+  font-family:lm;
+  color: rgb(77, 76, 77);
+  font-size: 18;
+  margin-left: 40px;
+  top: 12%;
+  left: 0%;
+  word-break: break-all;
+  z-index: 2;
+}
 
 .sign{
   background-color: rgb(234,89,75);
   border-radius: 15px;
   line-height: 40px;
-  padding: 0% 10px;}
+  padding: 0% 10px;
+  z-index: 2;
+}
 
 /*drop down*/
 .dropdown1 {
@@ -226,16 +242,6 @@ slide p {
   30% {left: -100%; width: 100%; opacity: 1;} 
   30.0001% {left: -100%; width: 0%; opacity: 0;} 
   100% {left: 100%; width: 100%; opacity: 0;} 
-}
-.centered {
-  position: absolute;
-  font-family:lm;
-  color: rgb(77, 76, 77);
-  font-size: 18;
-  margin-left: 40px;
-  top: 8%;
-  left: 0%;
-  word-break: break-all;
 }
 
 /*end*/
