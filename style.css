@@ -93,7 +93,9 @@ html, body{
   position: absolute;
   background-color: rgb(234, 232, 220);
   min-width: 160px;
-  z-index: 1;}
+  z-index: 50;
+}
+
 .dropdown-content1 a {
   color: rgb(77, 76, 77);
   text-align: left;
@@ -114,7 +116,7 @@ html, body{
   position: absolute;
   background-color: rgb(234, 232, 220);
   min-width: 160px;
-  z-index: 1;
+  z-index: 50;
 }
 .dropdown-content2 a {
   color: rgb(77, 76, 77);
@@ -135,7 +137,7 @@ html, body{
   position: absolute;
   background-color: rgb(234, 232, 220);
   min-width: 160px;
-  z-index: 1;
+  z-index: 50;
 }
 .dropdown-content3 a {
   color: rgb(77, 76, 77);
@@ -168,6 +170,7 @@ slider {
   overflow: hidden; 
   position: absolute;
   top: 0%; 
+  z-index: 1;
 }
 slider > * { 
   position: absolute; 
